@@ -71,3 +71,22 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+## CLI 
+module 
+nest g module module名
+
+controller 
+nest g controller controller名
+
+service
+nest g service service名
+
+--no-specをつけるとテストファイルが作成されない
+
+## ローカル起動
+yarn start:dev 
+:devでauto反映
+
+patchは、データがすでに存在しているものに対して更新をかける処理です。 putはデータが存在しているかどうかわからないときに使用します。 データが存在しているときは更新をし、データが存在しない場合は新規作成を行うという処理です。

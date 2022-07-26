@@ -1,0 +1,60 @@
+openapi: 3.0.0
+paths:
+  /items:
+    get:
+      operationId: ItemsController_findAll
+      parameters: []
+      responses:
+        '200':
+          description: ''
+    post:
+      operationId: ItemsController_create
+      parameters: []
+      responses:
+        '201':
+          description: ''
+  /items/{id}:
+    get:
+      operationId: ItemsController_findById
+      parameters:
+        - name: id
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+    patch:
+      operationId: ItemsController_update
+      parameters:
+        - name: id
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+    delete:
+      operationId: ItemsController_delete
+      parameters:
+        - name: id
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ''
+info:
+  title: nest-demo
+  description: Nest-demo API description
+  version: '1.0'
+  contact: {}
+tags:
+  - name: Nest-demo
+    description: ''
+servers: []
+components:
+  schemas: {}
