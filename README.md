@@ -72,16 +72,18 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
+## 初期スケルトン作成
+$ nest new project名
 
 ## CLI 
 module 
-nest g module module名
+$ nest g module module名
 
 controller 
-nest g controller controller名
+$nest g controller controller名
 
 service
-nest g service service名
+$ nest g service service名
 
 --no-specをつけるとテストファイルが作成されない
 
@@ -92,3 +94,8 @@ yarn start:dev
 patchは、データがすでに存在しているものに対して更新をかける処理です。 putはデータが存在しているかどうかわからないときに使用します。 データが存在しているときは更新をし、データが存在しない場合は新規作成を行うという処理です。
 
 DTO deta transfar object
+各レコードのidはv４でユニークなidをつける
+
+## class validator
+
+$ yarn add class-validator class-transformer
