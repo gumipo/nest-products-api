@@ -99,3 +99,13 @@ DTO deta transfar object
 ## class validator
 
 $ yarn add class-validator class-transformer
+
+
+## ORM object relational mapping 
+
+1. SQLを書かなくてもDB操作ができる
+2. データの定義は1箇所で済むので保守性が高い
+3. DBの抽象化
+
+TypeORM 
+Prisma
