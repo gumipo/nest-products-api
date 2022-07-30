@@ -10,6 +10,12 @@ paths:
     post:
       operationId: ItemsController_create
       parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateItemDto'
       responses:
         '201':
           description: ''
@@ -57,4 +63,7 @@ tags:
     description: ''
 servers: []
 components:
-  schemas: {}
+  schemas:
+    CreateItemDto:
+      type: object
+      properties: {}
